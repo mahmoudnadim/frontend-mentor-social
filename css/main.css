@@ -16,20 +16,21 @@
 body{
     background: var(--Off-Black);
 }
-.container{
+main{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--Dark-Grey);
-    border-radius: .7rem;
+    border-radius: 9.8px;
     justify-content: space-between;
     gap: 27px;
 }
 .profile_c{
-    gap: 30px;
+    gap: 28px;
+    margin-bottom: 1px;
 }
-.container,.profile_c,.mainList,.profileTitle,.mainListItem{
+main,.profile_c,.mainList,.profileTitle,.mainListItem{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -37,10 +38,11 @@ body{
 }
 .profileTitle{
     color: var(--White);
-    gap: 13px;
+    gap: 14px;
+    margin-bottom: 3px;
 }
 .location{
-    font-size: .89rem;
+    font-size: 14.2px;
     font-weight: 600;
     color: var(--primary-color)
 }
@@ -71,15 +73,15 @@ body{
     padding-bottom: 14px;
     background: var(--Grey);
     width: 100%;
-    border-radius: .8rem;
+    border-radius: 7px;
     color: var(--White);
     font-weight: 500;
-    font-size: 14.5px;
+    font-size: 14px;
     cursor: pointer;
     transition: all .3s;
 }
 .name{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
 }
 .mainListItem:hover,.mainListItem:active{
@@ -89,15 +91,23 @@ body{
 
 
 
+
+
 @media only screen and (min-width: 375px) {
-    .container{
-        width: 90%;
-        padding: 1.8rem 1.4rem;
+    main{
+        width: 368px;
+        padding: 33.6px 40px;
     }
 }
 @media only screen and (min-width: 575px) {
-    .container{
-        width: 24rem;
-        padding: 2.2rem 2.5rem;
+    main{
+        width: 385px;
+        padding: 35.2px 40px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    main{
+        width: 90%;
+        padding: 28.8px 22.4px;
     }
 }
